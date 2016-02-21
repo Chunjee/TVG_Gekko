@@ -5,30 +5,34 @@
  * @help        :: See http://sailsjs.org/#!/documentation/concepts/Controllers
  */
 
-setInterval(Fn_CheckDate, 1000*60*5); //re-check the date every 5 mins
-var The_Date;
+//setInterval(Fn_ApplyNewDate, 1000*60*5); //re-check the date every 5 mins (1000*60*5)
 
 
+var mytail = TailMsgBroker.CheckTail();
+if (mytail !== undefined) {
+	mytail.on("line", function(line) {
+		console.log(line);
+		var Message_Obj = Fn_MessageSeverityGutCheck(line);
+		//only display messages to the user if they are FATAL or SEVERE
+		if (Message_Obj.Severity === 1 || Message_Obj.Severity === 2) {
+			console.log(Message_Obj.Message);
+			//SlackPost(Message_Obj.Message + ": " + Message_Obj.RawMessage);
+		}
+		if (Message_Obj.Severity === 3) {
+			console.log(Message_Obj.Message + ": " + Message_Obj.RawMessage);
+		}
+	});
+	mytail.on("error", function(error) {
+		console.log('ERROR with MessageBroker file: ', error);
+		mytail.unwatch();
+	});
+}
 
-var mytail = TailMsgBroker.StartTail();
-mytail.on("line", function(line) {
-	console.log(line);
-	var Message_Obj = Fn_MessageSeverityGutCheck(line);
-	//only display messages to the user if they are FATAL or SEVERE
-	if (Message_Obj.Severity === 1 || Message_Obj.Severity === 2) {
-		console.log(Message_Obj.Message);
-		//SlackPost(Message_Obj.Message + ": " + Message_Obj.RawMessage);
-	}
-	if (Message_Obj.Severity === 3) {
-		console.log(Message_Obj.Message + ": " + Message_Obj.RawMessage);
-	}
-});
-mytail.on("error", function(error) {
-	console.log('ERROR with MessageBroker file: ', error);
-	mytail.unwatch();
-});
+function Fn_ReWatch() {
+	var mytail = TailMsgBroker.CheckTail();
+}
 
-
+//Not used at the moment
 function Fn_CheckDate() {
 	var Datetime = require('machinepack-datetime');
 
@@ -48,10 +52,16 @@ function Fn_CheckDate() {
 	},
 	// OK.
 	success: function (result){
-	The_Date = result;
+		The_Date = result;
+		Fn_ApplyNewDate();
 	},
 	});
 }
+
+
+
+
+
 
 
 
