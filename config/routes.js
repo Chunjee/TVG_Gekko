@@ -34,6 +34,10 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
+  },
+
+  '/message_monitor': {
+    view: 'page_msgmonitor'
   }
 
   /***************************************************************************
