@@ -6,4 +6,22 @@ Restart the effected Service/Service,2,RPC server is unavailable,,Investigate,1,
 IVR has missing pool or other Dialogic error,2,Dialogic,,Restart the Impacted IVR,1,http://confluence.tvg.com/display/wog/IVR+Dialogic+Error
 Logging service not started,3,Truncation error,,Start the log service at your convenience,0,http://confluence.tvg.com/display/wog/String+Data+Right+Truncation+errors+on+DDS
 Coupled Entry just placed in a race,3,Finisher data contains shared betting interest,,Enter finisher information manually,0,http://confluence.tvg.com/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Warning
+,,,,,,
+X track with Y abbreviation for Z day has an invalid time format,4,Update Race where,,,,https://confluence.tvg.com/display/wog/Invalid+Time+Format+Error
 Normal error created by AmTote,4,Payment type not bound,,Normal error created by AmTote,0,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+???,4,Error in Automated Bet Reviewer,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+Race just went official,4,Results  are  final,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+BOP is working on reconciling bets,4,unreconciled bets selected,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+New account created,4,Opening new account,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+Customers account was created at Tote,4,Creating tote account,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+A horse was scratched,4,A horse was scratched,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+A horse was livened,4,A horse was livened,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+The race has closed,4,The race has closed,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+track is not available via Gateway; typically OK,4,Data has been parsed for Track,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+Track just became available over the SGRGateway,4,now available via the SGRGateway,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+Someone has connected to the messagebroker with messagemonitor,4,Message Monitor,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+a new thread entered from the DataCollector,4,ThreadStart(),,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+TMS starting up,4,TMS starting up,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+Track Abbreviation not found,4,Track Abbreviation not found,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+callback exception has ended,4,The callback connection to,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
+User input wrong PIN,4,EINVALIDPIN,,,,https://betfairus.atlassian.net/wiki/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Informational
