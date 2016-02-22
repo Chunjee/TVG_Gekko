@@ -1,0 +1,8 @@
+short_description,severity,instring,instring2,quickfix,report on slack,documentation
+SDL Data Service may have hung,2,may have hung,,Check SDL Data Service,1,http://confluence.tvg.com/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Fatal
+Tote windows down,1,Error getting account balance,,Call Tote Now,1,http://confluence.tvg.com/display/wog/RC+-33+error+message+on+DDS+TIP+down+procedures
+DBA issue,2,Could not find server,,Investigate,1,
+Restart the effected Service/Service,2,RPC server is unavailable,,Investigate,1,http://confluence.tvg.com/display/wog/RPC+server+is+unavailable
+IVR has missing pool or other Dialogic error,2,Dialogic,,Restart the Impacted IVR,1,http://confluence.tvg.com/display/wog/IVR+Dialogic+Error
+Logging service not started,3,Truncation error,,Start the log service at your convenience,0,http://confluence.tvg.com/display/wog/String+Data+Right+Truncation+errors+on+DDS
+Coupled Entry just placed in a race,3,Finisher data contains shared betting interest,,Enter finisher information manually,0,http://confluence.tvg.com/display/wog/Index+of+Message+Monitor+Errors#IndexofMessageMonitorErrors-Warning
