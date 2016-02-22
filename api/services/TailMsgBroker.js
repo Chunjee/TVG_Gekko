@@ -17,7 +17,7 @@ module.exports = {
     //2
     //drop any existing tail and start a new one with the current date
     CheckTail: function() {
-      if (Fn_SimpleTime("h") < 3 || Fn_SimpleTime("h") > 23) { // If After 3:00 and before 23:00
+      if (Fn_SimpleTime("h") < 3 || Fn_SimpleTime("h") > 23) { // After 3:00 and before 23:00
         console.log("sleep while business does maint")
         return
         } else {
