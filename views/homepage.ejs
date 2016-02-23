@@ -12,63 +12,131 @@ setTimeout(function sunrise () {
 
 <div class="default-page">
   <div class="header">
-    <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
+    <h1 id="main-title" class="container"><%= __('TVG Gekkō') %></h1>
     <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
   </div>
   <div class="main container clearfix">
-    <!-- <h1>Getting started</h1>
-    <p>Don't worry, we've got your back.</p> -->
-    <ul class="getting-started">
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite one"></div>
-          <h3>Generate a REST API.</h3>
-          <p>
-            Run <code>sails generate api user</code>.  This will create two files: a <a href="http://sailsjs.org/#!/documentation/concepts/ORM/Models.html">model</a> <code class="pocket">api/models/User.js</code> and a <a href="http://sailsjs.org/#!/documentation/concepts/Controllers">controller</a><code class="pocket">api/controllers/UserController.js</code>.
-          </p>
-        </div>
-      </li>
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite two"></div>
-          <h3>
-            Lift your app.
-          </h3>
-          <p>
-            Run <code>sails lift</code> to start up your app server.  If you visit <a target="_blank" href="http://localhost:<%= sails.config.port || 1337%>/user"><code>http://localhost:<%= sails.config.port || 1337%>/user</code></a> in your browser, you'll see a <a href="http://sailsjs.org/#!/documentation/reference/blueprint-api">WebSocket-compatible</a> user API.
-          </p>
-        </div>
-      </li>
-      <li class="clearfix">
-        <div class="step">
-          <div class="sprite three"></div>
-          <h3>
-            Dive in.
-          </h3>
-          <p>Blueprints are just the beginning.  You'll probably also want to learn how to customize your app's <a href="http://sailsjs.org/#!/documentation/concepts/Routes">routes</a>, set up <a href="http://sailsjs.org/#!/documentation/concepts/Policies">security policies</a>, configure your <a href="http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html">data sources</a>, and build custom <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/Controllers?q=actions">controller actions</a>. For more help getting started, check out the links on this page.</p>
 
-        </div>
-      </li>
-    </ul>
-    <div class="links">
-      <!-- <h3>Links</h3> -->
-      <ul class="link-list">
+        <!DOCTYPE html>
+    <html lang="en">
 
-        <h4>Docs</h4>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/anatomy/myApp"><li>App Structure</li></a>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/reference"><li>Reference</li></a>
-        <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/extending-sails/Adapters/adapterList.html"><li>Supported Databases</li></a>
+      <head>
+        <title>SDL Gekkō</title>
+        <!-- Custom Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!--DataTables CSS-->
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" type="text/css">
+      </head>
 
-        <h4>Tutorials</h4>
-        <a target="_blank" href="https://github.com/sails101"><li>Sails 101</li></a>
+      <body id="page-top">
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display-->
+            <div class="navbar-header">
+              <button type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a href="/" class="navbar-brand page-scroll">Gekkō</a></div>
+            <!-- Collect the nav links, forms, and other content for toggling-->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="sdl_page" class="page-scroll">SDL</a></li>
+                <li><a href="status_page" class="page-scroll">Status</a></li>
+                <li><a href="tools_page" class="page-scroll">All Tools</a></li>
+                <li><a href="/#about" class="page-scroll">About</a></li>
+                <li><a href="#issue" class="page-scroll">Report a Problem</a></li>
+                <!-- /.navbar-collapse-->
+                <!-- /.container-fluid-->
+                <!-- if path === "/"-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <header>
+          <div class="header-content">
+            <div class="header-content-inner">
+              <h1>Text</h1>
+              <hr>
+              <p>Text</p> <a href="#about" class="btn btn-primary btn-xl page-scroll">Text</a></div>
+          </div>
+        </header>
+        <section id="separation" class="bg-primary">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Text</h2>
+                <hr class="light">
+                <p class="text-faded"></p>
+                <!--  | alf!!!-->
+                <!--|                     -->
+                <!--a.btn.btn-default.btn-xl(href='#') Text-->
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <h2 class="i fa fa-2x fa-info-circle wow bounceInsection-heading"> Whats all this?</h2>
+                <hr class="primary">
+                <p class="text-muted">Gekkō is a complete platform for WagerOps to monitor all aspects of horse racing and computer systems</p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box"><i class="fa fa-4x fa-tasks wow bounceIn text-primary"></i>
+                  <h3>Powerful Monitoring</h3>
+                  <p class="text-muted">Monitor all Tracks at a glance</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box"><i data-wow-delay=".1s" class="fa fa-4x fa-exclamation-triangle wow bounceIn text-primary"></i>
+                  <h3>Sensible Alerts</h3>
+                  <p class="text-muted">Monitor all systems and put an end to false positive spam</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box"><i data-wow-delay=".2s" class="fa fa-4x fa-newspaper-o wow bounceIn text-primary"></i>
+                  <h3>Everything in one place</h3>
+                  <p class="text-muted">all the tools you need, and they aren't hidden 5 folders deep</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box"><i data-wow-delay=".3s" class="fa fa-4x fa-gears wow bounceIn text-primary"></i>
+                  <h3>Smart</h3>
+                  <p class="text-muted">Powered by Node.js - modern, powerful, extendable, and doesn't crack under pressure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <aside class="bg-dark">
+          <div class="container text-center">
+            <div class="call-to-action">
+              <h2>Text</h2> <a href="#" class="btn btn-default btn-xl wow tada">Text</a></div>
+          </div>
+        </aside>
+        <section id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">WagerOps</h2>
+                <hr class="primary">
+                <p>blank</p>
+              </div>
+              <div class="col-lg-4 col-lg-offset-2 text-center"><i class="fa fa-phone fa-3x wow bounceIn"></i>
+                <p>(###)###-####</p>
+              </div>
+              <div class="col-lg-4 text-center"><i data-wow-delay=".1s" class="fa fa-envelope-o fa-3x wow bounceIn"></i></div>
+            </div>
+          </div>
+        </section>
+        <!--script(src="/static/js/jquery.js")-->
+      </body>
 
-        <h4>Community</h4>
-        <a target="_blank" href="http://stackoverflow.com/search?q=sails.js"><li>StackOverFlow</li></a>
-        <a target="_blank" href="https://github.com/balderdashy/sails"><li>GitHub</li></a>
-        <a target="_blank" href="https://groups.google.com/forum/#!forum/sailsjs"><li>Google Group</li></a>
-        <a target="_blank" href="http://webchat.freenode.net/"><li>IRC (#sailsjs on freenode)</li></a>
+    </html>
 
-      </ul>
-    </div>
   </div>
 </div>
